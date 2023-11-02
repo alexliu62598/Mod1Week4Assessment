@@ -39,19 +39,25 @@ To Edit the README:
     C. `var bench = new(24, true);`  
     D. `Chair bench = new(24, true);`  
     
-    
-2. Imagine you are interviewing for your first job.  The interviewer asks "What can you tell me about OOP?".  Write your response below:
+    Option C is not a valid way to create an instance of Chair. This is because it does not include the class name Chair anywhere in the declaration - the word Chair is necessary in order to tell the program which class we are creating an instance of.
+   
+3. Imagine you are interviewing for your first job.  The interviewer asks "What can you tell me about OOP?".  Write your response below:
 
+OOP refers to Object Oriented Programming, which is one of the foremost paradigms in programming. In OOP, our code is distributed amongst different objects, which we can create specific instances of. Each new instance of an object inherits all of the properties and methods of its object prototype. OOP allows for modular and readable code - if one object declaration is incorrect, our other objects are relatively unaffected as they are each in their own file, and a fellow programmer knows exactly where to look in order to address the issue. In C#, objects take the form of classes, but all of the same principles still apply.
 
-3. What is Automated Testing?
+4. What is Automated Testing?
 
+Automated testing refers to the process of creating a test project that refers back to the original project. This test project contains all of tests we wish to run on the original project. Automated testing differs from manual testing, where we test our project by simply running the code.
 
-4. What are some benefits of creating tests for our projects?
+5. What are some benefits of creating tests for our projects?
 
+Creating tests for our projects allows us to test our code as we write it. Rather than relying on executing the finished code to see if our program works, we can write tests for each class in our program as we create them. This allows us to identify/address bugs more clearly as they come up, rather than after we've built our entire program. This in turn ensures that we can find out where bugs are occuring once we've finished coding our program. Rather than relying on guesswork that may compromise the functionality of the entire program, we can run individual tests and figure out where errors are happening specifically.
 
-5. When you create a test project, you do not immediately have access to the class(es) in the project that you are testing.  What do you need to do in order to have access to those classes?
+6. When you create a test project, you do not immediately have access to the class(es) in the project that you are testing.  What do you need to do in order to have access to those classes?
 
-6. Take a look at the class below.  Write out the **names** of each test you would write to verify that this class is working. You do not need to write the whole test, just what you would **name** the test methods. Ex: `IsCreatedWithTwoArguments()`
+You need to add a project reference to the test file that refers to the project you wish to test.
+
+7. Take a look at the class below.  Write out the **names** of each test you would write to verify that this class is working. You do not need to write the whole test, just what you would **name** the test methods. Ex: `IsCreatedWithTwoArguments()`
 ```c#
     public class Vehicle
     {
@@ -84,6 +90,19 @@ To Edit the README:
     }
 ```
 
+Constructor_WhenInstantiated_SetsPropertyValues
+
+NumberOfWheelsProperty_CanBeRetrieved
+
+ColorProperty_CanBeRetrieved
+
+MilesDrivenProperty_CanBeRetrieved
+
+Summary_ReturnsDesiredString
+
+Drive_AddsToMilesDrivenProperty
+
+Paint_ReassignsColorProperty
 
 
 ## Exercise (8 Points Possible)
